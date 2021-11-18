@@ -2,7 +2,10 @@
 
 using namespace std;
 
-int tong(int a, int b);
+int tong(int a, int b)
+{
+	return a+b;
+};
 int hieu(int a, int b);
 int main()
 {
@@ -14,7 +17,10 @@ int main()
 	cin >> b;
 	cout << "Chon phep toan (+,-) ";
 	cin >> phepToan;  
-	
+	if(phepToan=='+')
+	{
+		cout<<"Ket qua phep tong la = "<<tong(a,b)<<endl;
+	} 
 	system("pause");
 	return 0;
 }
